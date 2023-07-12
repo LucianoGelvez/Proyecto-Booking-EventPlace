@@ -10,7 +10,7 @@ Finally, for administrators of the e-commerce website, there is the possibility 
 
 Data to simulate the reservation with;
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=14&duration=9000&pause=1000&vCenter=true&width=435&lines=Mercado+Pago)](https://git.io/typing-svg)
+![ev](https://github.com/LucianoGelvez/Proyecto-E-commerce-EventPlace/assets/111015329/7c469d4b-8528-41b0-8e83-1643280d6b80)
 
 👉card:
 3711 803032 57522
