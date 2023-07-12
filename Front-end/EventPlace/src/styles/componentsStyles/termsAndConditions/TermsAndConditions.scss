@@ -1,0 +1,22 @@
+@import '../../variables/_colors.scss';
+
+.termsAndConditions
+{
+    color: $black;
+    padding: 2vw;
+    position: relative;
+    top: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 130vh;
+    article
+    {
+     div
+     {
+        font-weight: 700;
+        position: relative;
+        top: 1vh;
+     }
+    }
+}

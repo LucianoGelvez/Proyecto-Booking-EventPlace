@@ -1,0 +1,50 @@
+build_frontend:
+  image: node:latest
+  stage: build
+  script:
+    - echo "Building the app"
+    - cd Front-end/EventPlace
+    - ls
+    - npm --force install
+    - npm install react-icons
+    - npm install react-datepicker
+    - npm install sweetalert
+    - npm install @mercadopago/sdk-react
+    - npm install moment
+    - npm run build
+    - echo "Finished building the app."
+    
+  artifacts:
+    name: react_build
+    paths:
+      - Front-end/EventPlace/dist
+  rules:
+    - changes:
+        - Front-end/**/*
+
+test_frontend:
+  stage: test
+  image: node:latest
+  script:
+    - echo "Testing the app"
+    - cd Front-end/EventPlace/
+    - npm install
+    - echo "Finished testing the app."
+  rules:
+    - changes:
+        - Front-end/**/*
+
+deploy_Frontend:
+  stage: deploy
+  needs: [build_frontend]
+  image: python:latest
+  script:
+    - pip install awscli
+    - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    - aws configure set region $AWS_REGION
+    - aws s3 sync Front-end/EventPlace/dist s3://eventplace-equipo4-bucket/
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "Infraestructura"'
+      changes:
+        - Front-end/**/*

@@ -1,0 +1,363 @@
+.user-table_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(27, 24, 23);
+  height: 90vh;
+  align-items: center;
+  padding: 20px;
+  margin: 40px;
+  margin-top: 150px;
+  margin-bottom: 200px;
+  border-radius: 10px;
+  box-shadow: inset 2px 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.registered-users_container {
+  background-color: rgba(179, 179, 179, 0.4352941176);
+  border-radius: 10px;
+  box-shadow: 2px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.registered-users_container:hover {
+  transform: scale(0.999);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  color: black;
+  background-color: #dad0c3;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.table:hover {
+  transform: scale(0.999);
+}
+.table .table_sure_to_delete {
+  position: absolute;
+  background-color: rgb(207, 202, 202);
+  width: 30vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.5vw;
+  top: 50vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+.table .table_sure_to_delete button {
+  border: none;
+  background-color: #FF4545;
+  font-size: 1.3vw;
+  color: #FFFFFF;
+  cursor: pointer;
+  height: 7vh;
+  border-radius: 0.4vw;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table .profile__content {
+  filter: blur(4px);
+  pointer-events: none;
+}
+.table__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.table__header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.table__header .input-group {
+  display: flex;
+  align-items: center;
+}
+.table__header .input-group input[type=search] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.table__header .input-group img {
+  width: 16px;
+  height: 16px;
+}
+.table__header .export__file .export__file-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.table__header .export__file input[type=checkbox] {
+  margin-left: 5px;
+}
+.table__body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table__body table input {
+  background-color: #F6EEE0;
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(204, 204, 204, 0);
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.table__body table th {
+  background-color: rgba(233, 112, 37, 0.9568627451);
+  font-weight: bold;
+  text-align: left;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0.6px 0.6px 0.6px 0.6px rgba(0, 0, 0, 0.104);
+}
+.table__body table th:hover {
+  transform: scale(0.999);
+}
+.table__body table .idCorner {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+.table__body table .tableleftCorner {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+.table__body table .tableRightCorner {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.table__body table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+.table__body table td:first-child {
+  display: flex;
+  align-items: center;
+}
+.table__body table td:first-child img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.table__body table td:last-child {
+  text-align: center;
+}
+.table__body table td:last-child .update-delete_roles-buttons {
+  padding: 10px;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+.table__body table td:last-child .update-delete_roles-buttons.status {
+  width: 80px;
+  text-transform: uppercase;
+}
+.table__body table td:last-child .update-delete_roles-buttons.delivered {
+  background-color: #00c206;
+  color: white;
+}
+.table__body table td:last-child .update-delete_roles-buttons.cancelled {
+  background-color: #ff2617;
+  color: white;
+}
+.table__body table td:last-child .update-delete_roles-buttons:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .table {
+    margin-top: 120px;
+    padding: 10px;
+  }
+  .table__header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .table__header h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .table__body {
+    overflow-x: auto;
+  }
+}
+
+.update-delete_roles-buttons {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  height: 40px;
+  position: relative;
+  top: 15%;
+  color: hsl(22, 23%, 21%);
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  box-shadow: rgba(233, 121, 30, 0.5);
+}
+.update-delete_roles-buttons:hover {
+  background-color: hsl(22, 23%, 21%);
+  color: white;
+  border: 1px solid rgb(255, 94, 0);
+}
+
+.update-delete_roles-buttons::after,
+.update-delete_roles-buttons::before {
+  transition: all 0.2s ease-in-out;
+}
+
+.update-delete_roles-buttons::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  left: -2em;
+  right: -2em;
+  top: -2em;
+  bottom: -2em;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, #ffffff 10%, transparent 20%), radial-gradient(circle, transparent 10%, #ffffff 10%, transparent 10%), radial-gradient(circle, transparent 10%, white 10%, transparent 10%), radial-gradient(circle, #ffffff 10%, transparent 10%), radial-gradient(circle, transparent 10%, white 10%, transparent 10%), radial-gradient(circle, white 10%, transparent 10%), radial-gradient(circle, transparent 10%, white 10%, transparent 10%), radial-gradient(circle, white 10%, transparent 10%), radial-gradient(circle, transparent 10%, white 10%, transparent 10%), radial-gradient(circle, transparent 10%, white 10%, transparent 10%), radial-gradient(circle, white 10%, transparent 10%), radial-gradient(circle, transparent 10%, white 10%, transparent 10%), radial-gradient(circle, white 10%, transparent 10%), radial-gradient(circle, transparent 10%, white 10%, transparent 10%), radial-gradient(circle, white 10%, transparent 10%), radial-gradient(circle, transparent 10%, white 10%, transparent 10%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%, 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  background-position: 18% 40%, 20% 31%, 30% 30%, 40% 30%, 50% 30%, 57% 30%, 65% 30%, 80% 32%, 15% 60%, 83% 60%, 18% 70%, 25% 70%, 41% 70%, 50% 70%, 64% 70%, 80% 71%;
+}
+
+.update-delete_roles-buttons:hover::before {
+  background-position: 5% 44%, -5% 20%, 7% 5%, 23% 0%, 37% 0, 58% -2%, 80% 0%, 100% -2%, -5% 80%, 100% 55%, 2% 100%, 23% 100%, 42% 100%, 60% 95%, 70% 96%, 100% 100%;
+  background-size: 0% 0%;
+  transition: background-position 0.5s ease-in-out, background-size 0.75s ease-in-out;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.input-container .label-style {
+  font-size: 15px;
+  padding-left: 20px;
+  position: absolute;
+  top: 13px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input-style {
+  margin: 20px 0px 20px 0px;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding: 0px 7px;
+  border-radius: 6px;
+  color: #433232;
+  font-size: 15px;
+  background-color: transparent;
+  box-shadow: 1px 1px 2px rgba(66, 53, 45, 0.237), -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+.input-style:hover {
+  background-color: hsl(24, 100%, 87%);
+}
+
+.input-style:focus {
+  border: 2px solid transparent;
+  color: #fff;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0), -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgb(0, 0, 0), inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.input-container .input-style:valid ~ .label-style,
+.input-container .input-style:focus ~ .label-style {
+  transition: 0.3s;
+  padding-left: 2px;
+  transform: translateY(-35px);
+}
+
+.input-container .input-style:valid,
+.input-container .input-style:focus {
+  box-shadow: 3px 3px 10px rgb(0, 0, 0), -1px -1px 6px rgba(255, 255, 255, 0.4), inset 3px 3px 10px rgb(0, 0, 0), inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.input-container::after,
+.input-container::before {
+  transition: all 0.2s ease-in-out;
+}
+
+.input-container::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  left: -2em;
+  right: -2em;
+  top: -2em;
+  bottom: -2em;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, #ffffff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ffffff 12%, transparent 12%), radial-gradient(circle, transparent 10%, white 12%, transparent 12%), radial-gradient(circle, #ffffff 12%, transparent 12%), radial-gradient(circle, transparent 10%, white 12%, transparent 12%), radial-gradient(circle, white 12%, transparent 12%), radial-gradient(circle, transparent 10%, white 12%, transparent 12%), radial-gradient(circle, white 12%, transparent 12%), radial-gradient(circle, transparent 10%, white 12%, transparent 12%), radial-gradient(circle, transparent 10%, white 12%, transparent 12%), radial-gradient(circle, white 12%, transparent 12%), radial-gradient(circle, transparent 10%, white 12%, transparent 12%), radial-gradient(circle, white 12%, transparent 12%), radial-gradient(circle, transparent 10%, white 12%, transparent 12%), radial-gradient(circle, white 12%, transparent 12%), radial-gradient(circle, transparent 10%, white 12%, transparent 12%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%, 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  background-position: 18% 40%, 20% 31%, 30% 30%, 40% 30%, 50% 30%, 57% 30%, 65% 30%, 80% 32%, 15% 60%, 83% 60%, 18% 70%, 25% 70%, 41% 70%, 50% 70%, 64% 70%, 80% 71%;
+}
+
+.input-container:hover::before {
+  background-position: 5% 44%, -5% 20%, 7% 5%, 23% 0%, 37% 0, 58% -2%, 80% 0%, 100% -2%, -5% 80%, 100% 55%, 2% 100%, 23% 100%, 42% 100%, 60% 95%, 70% 96%, 100% 100%;
+  background-size: 0% 0%;
+  transition: background-position 0.5s ease-in-out, background-size 0.75s ease-in-out;
+}
+
+.roles-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  background-color: rgba(67, 50, 50, 0.9333333333);
+  font-size: 16px;
+  color: #ff8902;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #b99d93;
+  transition: box-shadow 0.3s, color 0.3s, background-color 0.3s;
+  cursor: pointer;
+  z-index: 1;
+}
+.roles-select option {
+  font-size: 16px;
+  color: #f56105;
+}
+.roles-select:hover, .roles-select:focus {
+  box-shadow: 0 0 0 1px #ff5613;
+  color: #ff6613;
+  background-color: #ffffff;
+}
+.roles-select + .select-overlay {
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 0;
+}
+.roles-select:hover + .select-overlay, .roles-select:focus + .select-overlay {
+  opacity: 1;
+}/*# sourceMappingURL=UserTable.css.map */

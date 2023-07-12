@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Ubuntu&display=swap");
+.card-container {
+  background-color: #514A4B;
+  width: 280px;
+  height: 80%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #535050;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-container .prueba {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 200px;
+}
+.card-container .prueba .selectCategories {
+  background-color: aqua;
+}
+.card-container .prueba button {
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #EE5D1A;
+  background-color: #EE5D1A;
+}
+.card-container div {
+  text-align: center;
+}
+.card-container div h3 {
+  color: #F9F9F9;
+  position: relative;
+  margin-left: 20px;
+  font-size: 24px;
+}
+.card-container:hover {
+  cursor: pointer;
+}
+.card-container .img {
+  width: 300px;
+  height: 400px;
+}
+.card-container .content {
+  height: 490px;
+  width: 280px;
+  padding: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  bottom: 40px;
+  background: rgba(27, 27, 27, 0.3);
+  color: #F9F9F9;
+  transition: 0.5s;
+  bottom: -152px;
+}
+.card-container .content p {
+  color: #F9F9F9;
+  font-size: 15px;
+  line-height: 19px;
+  opacity: 1;
+  margin-left: 21px;
+  position: relative;
+}
+.card-container .content button {
+  position: relative;
+  bottom: 20px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  margin-top: 50px;
+  height: 45px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fad571, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.2);
+}
+.card-container .content button:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+.card-container .content button:focus {
+  outline: none;
+}/*# sourceMappingURL=Card.css.map */

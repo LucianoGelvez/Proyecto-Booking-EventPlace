@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Ubuntu&display=swap");
+.mainContainer {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mainContainer .mainContainer_textCancelled {
+  color: #ffffff;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5vw;
+  background-color: #94100a;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px;
+  letter-spacing: 7px;
+  word-spacing: 3px;
+  box-shadow: inset 0 0 5px 1px #1F1A1B;
+}
+
+.mainContainer_cardContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #F9F9F9;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  width: 85%;
+  overflow: hidden;
+}
+.mainContainer_cardContainer .cardImage {
+  position: relative;
+  width: 350px;
+  height: 150px;
+  border-radius: 30px 30px 30px 30px;
+  margin-left: 0px;
+  margin-right: 250px;
+  margin-top: 50px;
+}
+.mainContainer_cardContainer .secondContainer_list_mainContainer_cardContainer_dates {
+  letter-spacing: 2px;
+  font-size: 13px;
+  padding-top: 0px;
+  margin-top: 0px;
+  top: 0;
+  padding: 10px;
+  width: 50%;
+  color: #1F1A1B;
+}
+.mainContainer_cardContainer .secondContainer_list_mainContainer_cardContainer_dates .circleIcon {
+  color: #EE5D1A;
+  font-size: 0.6vw;
+  padding-right: 5px;
+}
+.mainContainer_cardContainer .mainContainer_BottomContainer {
+  display: flex;
+  justify-content: center;
+}
+.mainContainer_cardContainer .mainContainer_BottomContainer .mainContainer_BottomContainer_Bottom-cards {
+  margin: 15px;
+  height: 45px;
+  width: 150px;
+  border-radius: 50px;
+  background-color: #EE5D1A;
+  color: #F9F9F9;
+  border: none;
+  font-size: 1.2vw;
+}
+.mainContainer_cardContainer .mainContainer_BottomContainer .mainContainer_BottomContainer_Bottom-cards .icon {
+  padding-right: 5px;
+}
+.mainContainer_cardContainer .mainContainer_BottomContainer .mainContainer_BottomContainer_Bottom-cards:hover {
+  background-color: #d64a13;
+  border-radius: 40px;
+}
+.mainContainer_cardContainer .mainContainer_BottomContainer .mainContainer_BottomContainer_Bottom-cards:active {
+  border: 2px solid black;
+  transform: translateY(2px);
+  box-shadow: inset 0 0 5px 0 black;
+}
+
+.mainContainer_cardContainer:hover {
+  transform: scale(0.98);
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+.info .sectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+}
+.info .sectionContainer .firstContainer_mainContainer_cardContainer_dates_grl span {
+  color: #1F1A1B;
+  font-weight: 700;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.info .sectionContainer .firstContainer_mainContainer_cardContainer_dates_grl .firstContainer_mainContainer_cardContainer_dates {
+  word-wrap: break-word;
+  word-break: break-all;
+  word-wrap: normal;
+  overflow: hidden;
+  letter-spacing: 2px;
+  padding: 5px;
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
+  font-size: 13px;
+  color: #1F1A1B;
+}
+.info .sectionContainer .firstContainer_mainContainer_cardContainer_dates_grl .firstContainer_mainContainer_cardContainer_dates span {
+  color: #1F1A1B;
+  font-weight: 700;
+}
+.info .sectionContainer .secondContainer_mainContainer_cardContainer_dates span {
+  color: #1F1A1B;
+  font-weight: 700;
+}
+.info .sectionContainer .secondContainer_mainContainer_cardContainer_dates .secondContainer_mainContainer_mainContainer_cardContainer_dates {
+  letter-spacing: 2px;
+  padding: 5px;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 13px;
+  color: #514A4B;
+}
+.info .sectionContainer .secondContainer_mainContainer_cardContainer_dates .secondContainer_list_accountant_mainContainer_cardContainer_dates {
+  font-weight: 400;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.info .sectionContainer .secondContainer_mainContainer_cardContainer_dates .secondContainer_list_uncountable_mainContainer_cardContainer_dates {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 5px;
+  color: red;
+}
+
+.secondContainer_mainContainer_cardContainer_Edit {
+  display: flex;
+  flex-direction: column;
+  left: 30%;
+  position: relative;
+}
+.secondContainer_mainContainer_cardContainer_Edit label {
+  color: #1F1A1B;
+  font-weight: 700;
+}
+.secondContainer_mainContainer_cardContainer_Edit .secondContainer_mainContainer_cardContainer_Editdates {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  letter-spacing: 2px;
+  font-weight: bold;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 10px;
+  border: 2px double #d4551a;
+  animation: borderAnimationedit 1s linear infinite alternate;
+  width: 250px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: #ffffff;
+  box-shadow: inset 0 0 5px 0px black;
+  padding: 23px;
+}
+@keyframes borderAnimationedit {
+  0% {
+    border: 1px solid #f7f7f7;
+  }
+  50% {
+    border: 1px solid #EE5D1A;
+  }
+  100% {
+    border: 1px solid #EE5D1A;
+  }
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 12px solid #d4551a;
+  transition: transform 0.3s ease;
+  height: 230px;
+  width: 500px;
+  right: 35%;
+  top: 15%;
+  animation: borderAnimationedit 1s linear infinite alternate;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__month-container {
+  float: none;
+  width: 250px;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__month-container .react-datepicker__current-month {
+  font-size: 0.8vw;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__month-container .react-datepicker__header {
+  width: 100%;
+  font-size: 0.8vw;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__month-container .react-datepicker__header .react-datepicker__day-names {
+  width: 17vw;
+  height: auto;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__month-container .react-datepicker__header .react-datepicker__day-names .react-datepicker__day-name {
+  width: 6%;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__day--keyboard-selected:hover {
+  background-color: rgba(255, 99, 71, 0.2);
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__day {
+  color: #EE5D1A;
+  font-family: "Roboto", sans-serif;
+  width: 0.9vw;
+  height: 2.2vh;
+  font-size: 0.7vw;
+  font-weight: bold;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__day--disabled {
+  color: rgb(180, 180, 180);
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__day-name {
+  font-weight: 700;
+  color: #EE5D1A;
+  font-family: "Roboto", sans-serif;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__current-month {
+  font-weight: 900;
+  color: #EE5D1A;
+  font-family: "Roboto", sans-serif;
+  width: 13vw;
+  font-size: 0.7vw;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__triangle {
+  display: none;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle {
+  display: none;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker-popper {
+  transform: none;
+  position: fixed;
+  background-color: #e43603;
+  z-index: 0;
+  margin-left: 50px;
+  margin-top: 0;
+  font-weight: bold;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__day--range-end {
+  background-color: #216ba5;
+}
+.secondContainer_mainContainer_cardContainer_Edit .react-datepicker__day--highlighted {
+  background-color: #3cff00 !important;
+  color: #ffffff;
+  font-weight: bold;
+}
+.secondContainer_mainContainer_cardContainer_Edit .secondContainer_mainContainer_cardContainer_Editdates_listContainer {
+  margin: 5%;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: #ffffff;
+  box-shadow: inset 0 0 5px 0px black;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 40px;
+  color: black;
+  width: 300px;
+  padding: 25px;
+}
+.secondContainer_mainContainer_cardContainer_Edit .secondContainer_mainContainer_cardContainer_Editdates_listContainer .secondContainer_mainContainer_cardContainer_Editdates_listContainer_listAccountant {
+  margin: 6% 0% 2% 7%;
+  font-weight: bold;
+  background-color: #d2d0d0;
+  box-shadow: inset 0 0 8px 0px black;
+  padding: 15px;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 20px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+.secondContainer_mainContainer_cardContainer_Edit .secondContainer_mainContainer_cardContainer_Editdates_listContainer .secondContainer_mainContainer_cardContainer_Editdates_listContainer_listUncountable {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 5px;
+  letter-spacing: 2px;
+  color: rgb(164, 16, 0);
+}
+
+.mainContainer_cardContainer_status {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+.mainContainer_cardContainer_status.Old {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  border-radius: 30px;
+  padding: 15px;
+  border: 4px solid rgb(9, 9, 9);
+}
+
+.mainContainer_cardContainer_status.Happening {
+  color: green;
+  animation: blink 2s infinite;
+  background-color: rgb(115, 208, 21);
+  padding: 15px;
+  border-color: rgb(0, 255, 89);
+  color: #F9F9F9;
+}
+
+.mainContainer_cardContainer_status.Next {
+  color: #ffffff;
+  background-color: #EE5D1A;
+  margin-top: 0px;
+  top: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+
+.opaqueCard {
+  opacity: 0.655;
+  border: 10px double rgb(255, 0, 0);
+}
+
+.happeningNow {
+  border: 10px double transparent;
+  animation: borderAnimation 2s infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #18a406;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+.swal-Warning {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #6d5930;
+  text-align: center;
+  right: 5%;
+}
+.swal-Warning .swal-title {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 123, 0);
+}
+.swal-Warning .swal-text {
+  text-align: center;
+  font-weight: bolder;
+}
+.swal-Warning .swal-button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 70px;
+  background-color: #b03e00;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  flex-direction: column;
+}
+.swal-Warning .swal-button .swal-button.cancel {
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (max-width: 600px) {
+  .mainContainer .info {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainContainer .mainContainer_cardContainer p {
+    width: 100%;
+    word-wrap: break-word;
+  }
+  .mainContainer .mainContainer_cardContainer .mainContainer_BottomContainer_Bottom-cards {
+    width: 100%;
+    display: flex;
+    font-size: 4vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainContainer .react-datepicker {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    width: auto;
+    left: 10%;
+    font-size: 5vw;
+  }
+  .mainContainer .react-datepicker .react-datepicker__day {
+    font-size: 4vw;
+    padding: 5px;
+    width: 5vw;
+    height: 5vw;
+  }
+  .mainContainer .react-datepicker .react-datepicker__day--in-range {
+    padding: 5px;
+    font-size: 2.5vw;
+    margin-bottom: 0px;
+  }
+  .mainContainer .react-datepicker .react-datepicker__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5vw;
+    width: auto;
+  }
+  .mainContainer .react-datepicker .react-datepicker__header .react-datepicker__current-month {
+    width: auto;
+    font-size: 2.5vw;
+  }
+  .mainContainer .react-datepicker .react-datepicker__header .react-datepicker__day-names {
+    width: auto;
+  }
+  .mainContainer_cardContainer_status.Next {
+    font-size: 7vw;
+  }
+  .mainContainer_cardContainer_status.Happening {
+    font-size: 7vw;
+    color: #F9F9F9;
+  }
+}
+@media (min-width: 601px) and (max-width: 1100px) {
+  .mainContainer .mainContainer_cardContainer {
+    margin-top: 10%;
+    margin-bottom: 0px;
+  }
+  .mainContainer .info .sectionContainer {
+    width: 70%;
+  }
+  .mainContainer .info .secondContainer_list_mainContainer_cardContainer_dates {
+    width: 30%;
+  }
+}/*# sourceMappingURL=BookingToHistory.css.map */

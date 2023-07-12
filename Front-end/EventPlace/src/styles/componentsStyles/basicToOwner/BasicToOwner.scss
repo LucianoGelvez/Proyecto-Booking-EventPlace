@@ -1,0 +1,82 @@
+@import "../../variables/colors.scss";
+@import "../../variables/fonts.scss";
+
+.changeRoleMessage {
+  margin-top: 180px;
+  margin-left: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 600px;
+  height: 500px;
+  background-color: $white;
+  font-size: 40px;
+  color: $black;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ee5d1a;
+  border-radius: 10px;
+  padding: 25px;
+  p {
+    padding-bottom: 50px;
+  }
+  button {
+    border: none;
+    background-color: #ee5d1a;
+    color: #ffffff;
+    width: 400px;
+    height: 18%;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+    height: 8vh;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .changeRoleMessage {
+    width: 80%;
+    height: 80%;
+    font-size: 25px;
+    padding: 25px;
+
+    button {
+      border: none;
+      background-color: #ee5d1a;
+      color: #ffffff;
+      width: 80%;
+      height: 200px;
+      cursor: pointer;
+      border-radius: 0.5vw;
+      font-size: 15px;
+      height: auto;
+    }
+  }
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+  .changeRoleMessage {
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+    width: 80%;
+    height: 80%;
+    font-size: 25px;
+    padding: 25px;
+
+    button {
+      border: none;
+      background-color: #ee5d1a;
+      color: #ffffff;
+      width: 60%;
+
+      cursor: pointer;
+      border-radius: 0.5vw;
+      font-size: 15px;
+      height: auto;
+    }
+  }
+}

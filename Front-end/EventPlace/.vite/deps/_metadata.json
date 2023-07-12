@@ -1,0 +1,149 @@
+{
+  "hash": "e5bb55c6",
+  "browserHash": "5b4bd684",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "93c9c0d4",
+      "needsInterop": true
+    },
+    "stompjs": {
+      "src": "../../node_modules/stompjs/index.js",
+      "file": "stompjs.js",
+      "fileHash": "e7e6ea89",
+      "needsInterop": true
+    },
+    "sockjs-client": {
+      "src": "../../node_modules/sockjs-client/lib/entry.js",
+      "file": "sockjs-client.js",
+      "fileHash": "b54d6914",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "41f39782",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "fd1e3cd4",
+      "needsInterop": false
+    },
+    "@fortawesome/react-fontawesome": {
+      "src": "../../node_modules/@fortawesome/react-fontawesome/index.es.js",
+      "file": "@fortawesome_react-fontawesome.js",
+      "fileHash": "f9cc9ab7",
+      "needsInterop": false
+    },
+    "@fortawesome/free-solid-svg-icons": {
+      "src": "../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
+      "file": "@fortawesome_free-solid-svg-icons.js",
+      "fileHash": "ef80a2ed",
+      "needsInterop": false
+    },
+    "yup": {
+      "src": "../../node_modules/yup/index.esm.js",
+      "file": "yup.js",
+      "fileHash": "7ac4c9cc",
+      "needsInterop": false
+    },
+    "react-share": {
+      "src": "../../node_modules/react-share/es/index.js",
+      "file": "react-share.js",
+      "fileHash": "61b5c4a5",
+      "needsInterop": false
+    },
+    "formik": {
+      "src": "../../node_modules/formik/dist/formik.esm.js",
+      "file": "formik.js",
+      "fileHash": "e9e55caa",
+      "needsInterop": false
+    },
+    "react-datepicker": {
+      "src": "../../node_modules/react-datepicker/dist/es/index.js",
+      "file": "react-datepicker.js",
+      "fileHash": "40918359",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "be325be4",
+      "needsInterop": false
+    },
+    "date-fns": {
+      "src": "../../node_modules/date-fns/esm/index.js",
+      "file": "date-fns.js",
+      "fileHash": "7b60f605",
+      "needsInterop": false
+    },
+    "moment": {
+      "src": "../../node_modules/moment/dist/moment.js",
+      "file": "moment.js",
+      "fileHash": "f6e95ba0",
+      "needsInterop": false
+    },
+    "@mercadopago/sdk-react": {
+      "src": "../../node_modules/@mercadopago/sdk-react/index.js",
+      "file": "@mercadopago_sdk-react.js",
+      "fileHash": "aee00476",
+      "needsInterop": false
+    },
+    "@react-google-maps/api": {
+      "src": "../../node_modules/@react-google-maps/api/dist/esm.js",
+      "file": "@react-google-maps_api.js",
+      "fileHash": "0bd2a811",
+      "needsInterop": false
+    },
+    "sweetalert2": {
+      "src": "../../node_modules/sweetalert2/dist/sweetalert2.all.js",
+      "file": "sweetalert2.js",
+      "fileHash": "ab3d9bfe",
+      "needsInterop": true
+    },
+    "sweetalert": {
+      "src": "../../node_modules/sweetalert/dist/sweetalert.min.js",
+      "file": "sweetalert.js",
+      "fileHash": "9f88c0b9",
+      "needsInterop": true
+    },
+    "@fortawesome/free-regular-svg-icons": {
+      "src": "../../node_modules/@fortawesome/free-regular-svg-icons/index.mjs",
+      "file": "@fortawesome_free-regular-svg-icons.js",
+      "fileHash": "bd584c38",
+      "needsInterop": false
+    },
+    "react-icons/ai": {
+      "src": "../../node_modules/react-icons/ai/index.esm.js",
+      "file": "react-icons_ai.js",
+      "fileHash": "5d029f22",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-YJH6ZXJ6": {
+      "file": "chunk-YJH6ZXJ6.js"
+    },
+    "chunk-VDLML7LY": {
+      "file": "chunk-VDLML7LY.js"
+    },
+    "chunk-5JPX2TLN": {
+      "file": "chunk-5JPX2TLN.js"
+    },
+    "chunk-NQS6WLNR": {
+      "file": "chunk-NQS6WLNR.js"
+    },
+    "chunk-RJXUTLJJ": {
+      "file": "chunk-RJXUTLJJ.js"
+    },
+    "chunk-32AJJKBB": {
+      "file": "chunk-32AJJKBB.js"
+    },
+    "chunk-HYZYPRER": {
+      "file": "chunk-HYZYPRER.js"
+    }
+  }
+}

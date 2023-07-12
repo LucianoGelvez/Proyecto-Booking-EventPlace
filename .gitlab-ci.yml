@@ -1,0 +1,3 @@
+include:
+  - local: 'Back-end/deploy_back.yml'
+  - local: 'Front-end/deploy_front.yml'

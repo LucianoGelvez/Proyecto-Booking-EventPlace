@@ -1,0 +1,13 @@
+EC2 para el back-end
+nombre: eventplace-equipo4
+
+BUCHET para el front-end
+nombre: eventplace-equipo4-bucket
+
+BUCKET para imagenes
+nombre: eventplace-equipo4-bucket-imagenes
+
+region: EE. UU. Este (Ohio) us-east-2
+
+service para back-end
+sudo systemctl status eventplace.service

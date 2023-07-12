@@ -1,0 +1,53 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build_backend:
+  image: maven:3.8.6-openjdk-18
+  stage: build
+  script:
+    - cd Back-end
+    - echo "Building app..."
+    - mvn clean package
+    - mvn clean install
+    - echo "Finished building the app."
+  artifacts:
+    paths:
+      - Back-end/target/EventPlace-0.0.1-SNAPSHOT.jar
+  rules:
+    - changes:
+        - Back-end/**/*
+
+test_backend:
+  stage: test
+  image: maven:3.8.6-openjdk-18
+  script:
+    - cd Back-end
+    - echo "Testing the app"
+    - mvn test
+    - echo "Finished testing the app."
+  rules:
+    - changes:
+        - Back-end/**/*
+
+deploy_Backend:
+  stage: deploy
+  needs: [build_backend]
+  image: ubuntu:latest
+  script:
+    - apt-get update -y
+    - export DEBIAN_FRONTEND=noninteractive
+    - apt-get install -y awscli openjdk-17-jre-headless
+    - apt install -y openssh-client
+    - chmod +x Back-end/deploy.sh
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa Back-end/target/EventPlace-0.0.1-SNAPSHOT.jar ubuntu@ec2-3-143-243-49.us-east-2.compute.amazonaws.com:/home/ubuntu/proyectoIntegrador
+    - ssh -o "StrictHostKeyChecking no" ubuntu@ec2-3-143-243-49.us-east-2.compute.amazonaws.com "sudo systemctl stop eventplace.service && sudo systemctl start eventplace.service"
+
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "Infraestructura"'
+      changes:
+        - Back-end/**/*

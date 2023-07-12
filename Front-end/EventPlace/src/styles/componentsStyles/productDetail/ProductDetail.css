@@ -1,0 +1,1033 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Ubuntu&display=swap");
+#root {
+  height: auto;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 480px) {
+  #root {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.productDetail {
+  position: relative;
+  width: 100%;
+  margin-top: 11vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+.productDetail .encabezado .product-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #EE5D1A;
+  color: #F9F9F9;
+  font-size: 27px;
+  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.productDetail .encabezado .product-name a:-webkit-any-link {
+  text-decoration: none;
+  color: #F9F9F9;
+}
+.productDetail .encabezado .product-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #EE5D1A;
+  opacity: 0.9;
+  height: 50px;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.productDetail .encabezado .product-header .share {
+  position: absolute;
+  top: 5vh;
+  background-color: #f9f9f9;
+  width: 17vw;
+  height: 9vh;
+  border-radius: 0.5vw;
+  display: flex;
+  justify-content: space-around;
+  left: 70vw;
+  box-shadow: 0 0 5px rgb(0, 0, 1);
+}
+.productDetail .encabezado .product-header .share img {
+  width: 3vw;
+  margin: 0;
+}
+.productDetail .encabezado .product-header .location-container_share {
+  padding: 1vw;
+  cursor: pointer;
+}
+.productDetail .encabezado .product-header .location-container_share img {
+  width: 2vw;
+}
+.productDetail .encabezado .product-header .location-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+.productDetail .encabezado .product-header .location-container .location-icon {
+  font-size: 18px;
+  color: #F9F9F9;
+  padding-right: 10px;
+}
+.productDetail .encabezado .product-header .location-container h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #F9F9F9;
+  font-weight: 300;
+  font-size: 15px;
+}
+.productDetail .encabezado .product-header .rating-location-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+.productDetail .encabezado .product-header .rating-location-container .stars-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.productDetail .encabezado .product-header .rating-location-container .stars-rating .rating-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #F9F9F9;
+  height: 30px;
+  margin-bottom: 5px;
+}
+.productDetail .encabezado .product-header .rating-location-container .stars-rating .rating-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 30px;
+}
+.productDetail .encabezado .product-header .rating-location-container .stars-rating .rating-wrapper .rating-container {
+  color: yellow;
+  margin: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  display: flex;
+}
+.productDetail .encabezado .product-header .rating-location-container .stars-rating .rating-wrapper .rating-container i {
+  font-size: 15px;
+}
+.productDetail .encabezado .product-header .rating-location-container .stars-rating .rating-wrapper .rating-container i fa-star-empty {
+  font-size: 18px;
+}
+.productDetail .encabezado .product-header .rating-location-container .numeric-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #F9F9F9;
+  border-width: 1px;
+  border-style: solid;
+  color: #F9F9F9;
+  margin-left: 10px;
+}
+
+.detailImage {
+  align-items: center;
+  background-color: #1F1A1B;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+.detailImage .view-all-images {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  margin-top: 50px;
+  height: 45px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fad571, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.2);
+}
+@media screen and (max-width: 800px) {
+  .detailImage .view-all-images {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .detailImage .view-all-images {
+    height: 65px;
+  }
+}
+.detailImage .view-all-images:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+  transform: scale(0.99);
+  border: 2px solid #bab7b4;
+}
+.detailImage .view-all-images:focus {
+  outline: none;
+}
+@media screen and (min-width: 800px) {
+  .detailImage .smallImages1 {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: -250px;
+    top: 30px;
+    margin: 5px;
+  }
+  .detailImage .smallImages1 img {
+    margin: 5px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  .detailImage .smallImages1 img:hover {
+    transform: scale(1.1);
+    border: 2px solid #eb700b;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (min-width: 1100px) {
+  .detailImage .smallImages1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 600px;
+    width: auto;
+    position: relative;
+    left: 20px;
+    top: -2px;
+  }
+  .detailImage .smallImages1 img {
+    width: 17vw;
+    height: 25vh;
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 5px rgba(222, 219, 219, 0.945);
+  }
+  .detailImage .smallImages1 img:hover {
+    transform: scale(0.99);
+    border: 2px solid #ff7700;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (min-width: 800px) {
+  .detailImage .smallImages2 {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: -228px;
+    bottom: 89px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .detailImage .smallImages2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    position: relative;
+    left: 20px;
+    top: -100px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .detailImage div {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .detailImage div {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 30px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .detailImage div {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 350px;
+    margin: 8px;
+  }
+}
+.detailImage .product-detail__main-image {
+  height: 60vh;
+}
+.detailImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 5px rgba(222, 219, 219, 0.945);
+}
+.detailImage img:hover {
+  transform: scale(0.99);
+  border: 2px solid #ff7700;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 1100px) {
+  .detailImage img {
+    width: 60%;
+  }
+}
+.detailImage .detailImage__image {
+  width: 55vw;
+  height: auto;
+  max-width: 100%;
+  max-height: 30vw;
+}
+@media screen and (max-width: 768px) {
+  .detailImage .detailImage__image {
+    display: none;
+  }
+}
+.detailImage .smallImages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2vw;
+}
+.detailImage .smallImages .detailImage__image2,
+.detailImage .smallImages .detailImage__image3 {
+  width: 100px;
+  height: auto;
+  max-width: 100%;
+  max-height: 30vw;
+}
+@media screen and (max-width: 768px) {
+  .detailImage .smallImages .detailImage__image2,
+  .detailImage .smallImages .detailImage__image3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .detailImage {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 800px) {
+  .detailImage {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .detailImage {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.detailMenuSelection {
+  display: flex;
+  justify-content: flex-start;
+  width: 50vh;
+  font-size: 29px;
+  padding: 1vw 0.5vw;
+  position: relative;
+  top: 1vw;
+  font-weight: 500;
+  border-bottom: 1px solid #ccc;
+  width: 90%;
+  margin: 30px;
+  margin-left: 5%;
+}
+.detailMenuSelection div {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.detailMenuSelection div:hover {
+  color: #ff8c00;
+}
+.detailMenuSelection div::before, .detailMenuSelection div::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #ff8c00;
+  transition: width 0.3s ease;
+}
+.detailMenuSelection div::before {
+  left: 0;
+}
+.detailMenuSelection div::after {
+  right: 0;
+}
+.detailMenuSelection div:hover::before, .detailMenuSelection div:hover::after {
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  .detailMenuSelection {
+    justify-content: flex-start;
+    font-size: 7vw;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    bottom: 0;
+  }
+}
+
+.firstSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  padding-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.firstSection .detailAndDates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+}
+.firstSection .detailAndDates .productOverviewBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 10vh;
+  width: 45%;
+  padding-top: 20px;
+}
+.firstSection .detailAndDates .productOverviewBody:hover {
+  transform: scale(0.99);
+}
+.firstSection .detailAndDates .productOverviewBody .productOverviewBody__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1F1A1B;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .firstSection .detailAndDates .productOverviewBody .productOverviewBody__subtitle {
+    margin: 4vw;
+  }
+}
+.firstSection .detailAndDates .productOverviewBody .productOverviewBody__description {
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vw;
+  color: #1F1A1B;
+  text-align: justify;
+}
+@media screen and (max-width: 480px) {
+  .firstSection .detailAndDates .productOverviewBody .productOverviewBody__description {
+    margin-bottom: 8vw;
+  }
+}
+.firstSection .detailAndDates .productOverviewBody .facilities {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  list-style-type: "none";
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-gap: "1em";
+       column-gap: "1em";
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.firstSection .detailAndDates .productOverviewBody h1 {
+  margin-top: 8%;
+}
+.firstSection .detailAndDates .productOverviewBody ul {
+  margin-top: 8px;
+  list-style-type: none;
+  -moz-columns: 2;
+       columns: 2;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  font-size: 3vw;
+}
+.firstSection .detailAndDates .productOverviewBody ul li {
+  font-size: 1.3vw;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.firstSection .detailAndDates .productOverviewBody ul li:hover {
+  background-color: #f0f0f0;
+}
+.firstSection .detailAndDates .productOverviewBody ul li .facility-icon {
+  margin-right: 5px;
+  font-size: 18px;
+  color: #ff8c00;
+}
+@media screen and (max-width: 480px) {
+  .firstSection .detailAndDates .productOverviewBody {
+    width: 85vw;
+    height: auto;
+    position: relative;
+    left: 2px;
+    top: 50px;
+  }
+  .firstSection .detailAndDates .productOverviewBody ul {
+    margin-top: 2vw;
+    -moz-columns: 1;
+         columns: 1;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .firstSection .detailAndDates .productOverviewBody ul li {
+    padding: 1vw;
+  }
+}
+.firstSection .detailAndDates .bookedDates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: auto;
+  padding-top: 20px;
+}
+.firstSection .detailAndDates .bookedDates .bookedDates_title {
+  position: relative;
+  bottom: 1vh;
+  text-align: center;
+  font-size: 1.2vw;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  padding-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #1F1A1B;
+}
+.firstSection .detailAndDates .bookedDates .detail_sure_to_delete {
+  position: absolute;
+  background-color: rgb(207, 202, 202);
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2vw;
+  border-radius: 0.5vw;
+  top: 1100px;
+  left: 50%;
+  transform: translate(-50%);
+  filter: none;
+  z-index: 100;
+}
+.firstSection .detailAndDates .bookedDates .startButtonButton {
+  padding: 25px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 1px;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fad571, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.25);
+}
+.firstSection .detailAndDates .bookedDates .startButtonButton:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+.firstSection .detailAndDates .bookedDates .startButtonButton:focus {
+  outline: none;
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker {
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border-color: rgb(180, 180, 180);
+  border-style: solid;
+  border-width: 1px;
+  transition: transform 0.3s ease;
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker__month-container {
+  float: none;
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker__day--keyboard-selected:hover {
+  background-color: rgba(255, 99, 71, 0.2);
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker__day {
+  color: #EE5D1A;
+  font-family: "Roboto", sans-serif;
+  pointer-events: none;
+  background-color: #F9F9F9;
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker__day--disabled {
+  color: rgb(180, 180, 180);
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker__day--excluded {
+  color: #EE5D1A;
+  background-color: rgb(180, 180, 180);
+  border-radius: 0.2vw;
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker__day-name {
+  font-weight: 700;
+  color: #EE5D1A;
+  font-family: "Roboto", sans-serif;
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker__current-month {
+  font-weight: 700;
+  color: #EE5D1A;
+  font-family: "Roboto", sans-serif;
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker__triangle {
+  display: none;
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle {
+  display: none;
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker-popper {
+  transform: none;
+  position: fixed;
+  background-color: #e43603;
+  z-index: 0;
+  margin-left: 50px;
+  margin-top: 0;
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker__day--range-end {
+  background-color: #216ba5;
+}
+.firstSection .detailAndDates .bookedDates .react-datepicker__day--highlighted {
+  background-color: #3cff00 !important;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.policyBlock {
+  margin-top: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 3%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 50px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.policyBlock:hover {
+  transform: scale(0.99);
+}
+.policyBlock h1 {
+  border-bottom-color: #ff8c00;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-bottom: 30px;
+}
+.policyBlock .subtitlesBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.policyBlock .subtitlesBlock .policySection {
+  width: 33.3%;
+  padding-top: 30px;
+}
+.policyBlock .subtitlesBlock .policySection .policyInfo {
+  padding-left: 28px;
+  padding-right: 40px;
+  text-align: justify;
+}
+.policyBlock .subtitlesBlock .policySection .policyTitle {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.policyBlock .subtitlesBlock .policySection .policyTitle .policy-icon {
+  width: 23px;
+  margin-right: 5px;
+  font-size: 18px;
+  color: #ff8c00;
+}
+
+@media (max-width: 600px) {
+  .productDetail .encabezado .product-name {
+    font-size: 22px;
+    height: 80px;
+    padding: 20px;
+  }
+  .productDetail .encabezado .product-header {
+    font-size: 13px;
+  }
+  .productDetail .encabezado .product-header .location-container_share img {
+    width: 6vw;
+  }
+  .productDetail .encabezado .product-header .share {
+    display: flex;
+    flex-direction: column;
+    width: 8.5vw;
+    height: auto;
+    left: 55%;
+    top: 19vh;
+  }
+  .productDetail .encabezado .product-header .share img {
+    width: 8vw;
+    margin: 2px;
+  }
+  .productDetail .encabezado .product-header .location-container {
+    width: 60%;
+  }
+  .productDetail .encabezado .product-header .location-container h2 {
+    font-size: 13px;
+  }
+  .productDetail .encabezado .product-header .rating-location-container {
+    width: 40%;
+  }
+  .productDetail .encabezado .product-header .rating-location-container .stars-rating .rating-text {
+    align-items: flex-end;
+    margin-bottom: 5px;
+  }
+  .productDetail .encabezado .product-header .rating-location-container .stars-rating .rating-wrapper {
+    align-items: flex-start;
+  }
+  .productDetail .detailMenuSelection {
+    border-bottom: none;
+    margin: 5%;
+  }
+  .productDetail .firstSection {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 8%;
+  }
+  .productDetail .firstSection .detailAndDates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody {
+    margin-bottom: 24%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody .productOverviewBody__subtitle {
+    align-self: center;
+    margin-top: 0px;
+    font-size: 8vw;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody .productOverviewBody__description {
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size: 5vw;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody .facilities {
+    -moz-columns: 1;
+         columns: 1;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody .facilities h1 {
+    font-size: 8vw;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody .facilities li {
+    font-size: 6vw;
+  }
+  .productDetail .firstSection .detailAndDates .bookedDates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .productDetail .firstSection .detailAndDates .bookedDates .bookedDates_title {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 20px;
+    font-size: 5vw;
+    color: #666666;
+    text-align: justify;
+  }
+  .productDetail .firstSection .detailAndDates .bookedDates .startButtonButton {
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 55px;
+  }
+  .productDetail .firstSection .detailAndDates .bookedDates .react-datepicker {
+    display: flex;
+    flex-direction: column;
+  }
+  .productDetail .policyBlock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .productDetail .policyBlock h1 {
+    padding-left: 12px;
+    padding-right: 8px;
+  }
+  .productDetail .policyBlock .subtitlesBlock {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .productDetail .policyBlock .subtitlesBlock .policySection {
+    width: 100%;
+  }
+  .productDetail .policyBlock .subtitlesBlock .policySection .policyInfo {
+    text-align: justify;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    border-bottom-color: #514A4B;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+}
+@media (min-width: 601px) and (max-width: 1100px) {
+  .productDetail .encabezado .product-header .location-container_share img {
+    width: 4vw;
+  }
+  .productDetail .encabezado .product-header .share {
+    display: flex;
+    flex-direction: column;
+    width: 8vw;
+    height: auto;
+    left: 75vw;
+    top: 10vh;
+  }
+  .productDetail .encabezado .product-header .share img {
+    width: 7vw;
+    margin: 2px;
+  }
+  .productDetail .firstSection {
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody {
+    justify-content: space-evenly;
+    padding: 0%;
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 0px;
+    padding-left: 0%;
+    width: 45%;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody .productOverviewBody__subtitle {
+    font-size: 5vw;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody .productOverviewBody__description {
+    font-size: 3vw;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody .facilities {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody .facilities h1 {
+    padding-left: 5%;
+    font-size: 3.5vw;
+    font-weight: 700;
+  }
+  .productDetail .firstSection .detailAndDates .productOverviewBody .facilities li {
+    font-size: 2.5vw;
+    padding-left: 9%;
+  }
+  .productDetail .firstSection .detailAndDates .bookedDates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 4%;
+    padding-right: 0%;
+    width: 45%;
+  }
+  .productDetail .firstSection .detailAndDates .bookedDates .bookedDates_title {
+    padding-top: 20px;
+    font-size: 2.5vw;
+    color: #8f8f8f;
+  }
+  .productDetail .firstSection .detailAndDates .bookedDates .startButtonButton {
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 5%;
+  }
+  .productDetail .firstSection .detailAndDates .bookedDates .react-datepicker {
+    display: flex;
+    flex-direction: column;
+  }
+  .productDetail .policyBlock .subtitlesBlock {
+    flex-wrap: wrap;
+  }
+  .productDetail .policyBlock .subtitlesBlock .policySection {
+    width: 50%;
+  }
+}
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  z-index: 1000;
+}
+.modalBackground .modalContent {
+  background-color: rgba(99, 96, 105, 0.3098039216);
+  position: relative;
+  width: 80%;
+  height: 100%;
+  overflow-y: auto;
+}
+.modalBackground .modalContent::-webkit-scrollbar {
+  width: 8px;
+}
+.modalBackground .modalContent::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.modalBackground .modalContent .modalCloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.modalBackground .modalContent .modalCloseButton:hover {
+  transform: rotate(90deg);
+}
+.modalBackground .modalContent .modalCloseButton:focus {
+  outline: none;
+}
+.modalBackground .modalContent .modalCloseButton::before, .modalBackground .modalContent .modalCloseButton::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ff0202;
+  transition: transform 0.3s ease;
+}
+.modalBackground .modalContent .modalCloseButton::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+.modalBackground .modalContent .modalCloseButton::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+.modalBackground .modalContent .modalImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.modalBackground .modalContent .modalImageContainer .modalImage {
+  width: 45vw;
+  height: 45vw;
+}
+.modalBackground .modalContent .scrollButton {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #1F1A1B;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.modalBackground .modalContent .scrollButton.up {
+  top: 10px;
+}
+.modalBackground .modalContent .scrollButton.down {
+  bottom: 10px;
+}/*# sourceMappingURL=ProductDetail.css.map */

@@ -1,0 +1,155 @@
+.chatRoom {
+  box-shadow: 0 0 1vw rgba(143, 149, 149, 0.819);
+  width: 75vw;
+  background-size: cover;
+  border-radius: 10px;
+  height: 38vw;
+  background-color: #1f1a1b;
+  position: relative;
+}
+.chatRoom .myForm {
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: 34vw;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.chatRoom .messageInput {
+  width: 80%;
+  border: none;
+  border-radius: 25px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 6.5vh;
+  padding-left: 1vw;
+}
+.chatRoom .chatRoom_logo {
+  width: 40vw;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 22vh;
+}
+.chatRoom .chatButtonImg {
+  background-color: transparent;
+  border-radius: 25px;
+  width: 7%;
+  height: 6vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.chatRoom .chatButtonImg img {
+  width: 2.5vw;
+}
+.chatRoom .chatButtonImg:hover {
+  transform: scale(0.99);
+}
+.chatRoom .chatRoom_message_container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(30vw - 80px);
+  overflow-y: auto;
+  width: 70vw;
+  top: 2vh;
+  color: white;
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 30px;
+}
+.chatRoom .chatRoom_message_container .message-container-orange {
+  background-color: rgba(255, 123, 0, 0.9058823529);
+  border-radius: 8px;
+  margin: 10px;
+  position: relative;
+  left: 45vw;
+  padding: 10px;
+  height: auto;
+  word-wrap: break-word;
+  width: auto;
+  max-width: 30%;
+}
+.chatRoom .chatRoom_message_container .message-user-name {
+  position: relative;
+  left: 17vw;
+  background-color: #292a2b;
+  border-radius: 15px;
+  width: 2.5vw;
+  text-align: center;
+}
+
+.chatScroll ::-webkit-scrollbar-track {
+  background-color: #494646;
+}
+.chatScroll ::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+.chatScroll ::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 971px) {
+  .chatRoom {
+    position: relative;
+    height: 390px;
+    width: 98vw;
+    margin-left: 0.7%;
+    padding-bottom: 15px;
+  }
+  .chatRoom .chatRoom_message_container {
+    width: 90vw;
+    height: 70%;
+    padding: 20px;
+    right: 17.5px;
+  }
+  .chatRoom .chatRoom_message_container .message-container-orange {
+    max-width: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align: end;
+  }
+  .chatRoom .chatRoom_message_container .message-container-orange .message-user-name {
+    width: 60px;
+    padding: 1px;
+    border-radius: 1.5rem;
+    margin-bottom: 3px;
+    left: 0;
+    position: relative;
+  }
+  .chatRoom .myForm {
+    position: relative;
+    top: 84%;
+  }
+  .chatRoom .myForm .chatButtonImg {
+    width: auto;
+    padding: 0;
+  }
+  .chatRoom .myForm .chatButtonImg img {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (min-width: 972px) and (max-width: 1920px) {
+  .chatRoom {
+    height: 84vh;
+  }
+  .chatRoom .myForm {
+    top: 90%;
+  }
+  .chatRoom .chatRoom_message_container {
+    height: 64vh;
+  }
+  .chatRoom .chatRoom_message_container .message-user-name {
+    width: 2rem;
+    left: 85%;
+    padding: 1px;
+  }
+}/*# sourceMappingURL=ChatRoom.css.map */

@@ -1,0 +1,30 @@
+.favorites-title {
+  margin: 200px 0 0 100px;
+  color: rgb(104, 103, 103);
+  font-size: 40px;
+}
+
+.favorites-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  color: black;
+  margin-left: 5px;
+
+  .favorites-cardscontainer {
+    display: flex;
+    flex-flow: wrap;
+
+    .favorites-cardcontainer {
+      padding: 30px;
+      width: auto;
+      height: auto;
+      margin: 25px;
+    }
+  }
+}
+
+.favoritePage-icon {
+  position: relative;
+}

@@ -1,0 +1,79 @@
+@import "../../variables/_colors.scss";
+@import "../../variables/fonts";
+
+.footer {
+  background-color: $black;
+  font-size: 30px;
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  margin-top: auto;
+
+  .footer_logo {
+    display: flex;
+    align-items: center;
+
+    .footer_logo__img {
+      width: 200px;
+      margin: 8px;
+    }
+  }
+
+  .footer_copyright {
+    font-family: $montserrat;
+    color: $white;
+    font-size: medium;
+  }
+  .footer_icons {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: end;
+
+    .footer_icons_icon {
+      width: 20%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+@media (max-width: 980px) {
+  .footer {
+    height: 30px;
+    .footer_logo {
+      display: none;
+    }
+    .footer_icons {
+      display: none;
+    }
+    .footer_copyright {
+      margin-left: 5%;
+    }
+  }
+}
+@media (max-width: 835px) {
+  .footer {
+    .footer_icons {
+      width: 70%;
+      justify-content: end;
+
+      margin-left: 0%;
+
+      .footer_icons_icon {
+        width: auto;
+        width: 50%;
+        display: flex;
+        margin-right: 10%;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 971px) {
+  .footer {
+    height: 100px;
+  }
+}

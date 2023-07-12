@@ -1,0 +1,70 @@
+.guest-reviews {
+  margin: 10px 0 150px 80px;
+}
+.guest-reviews .comment-box {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1em;
+  width: 50vw;
+}
+.guest-reviews .comment-box .comment {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding: 15px;
+}
+.guest-reviews .comment-box .comment .comment-entry {
+  margin: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.guest-reviews .comment-box .comment .comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.guest-reviews .comment-box .comment .comment-header .comment-name {
+  font-weight: bold;
+  color: #c44f19;
+}
+.guest-reviews .comment-box .comment .comment-header .comment-date {
+  color: #888;
+}
+.guest-reviews .comment-box .comment .comment-text {
+  margin: 0;
+}
+.guest-reviews .comment-form {
+  margin-top: 20px;
+  width: 45vw;
+}
+.guest-reviews .comment-form input[type=text] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  height: 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.guest-reviews .comment-form button[type=submit] {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 45px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fad571, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.2);
+}
+.guest-reviews .comment-form button[type=submit]:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+.guest-reviews .comment-form button[type=submit]:focus {
+  outline: none;
+}/*# sourceMappingURL=guestReviews.css.map */

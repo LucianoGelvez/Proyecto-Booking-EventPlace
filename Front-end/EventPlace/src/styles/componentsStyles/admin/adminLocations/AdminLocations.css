@@ -1,0 +1,55 @@
+.adminLocations .adminLocations_arrow {
+  background-color: #EE5D1A;
+  position: absolute;
+  top: 150px;
+  left: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 35px;
+}
+.adminLocations .adminLocations_title {
+  position: absolute;
+  top: 172px;
+  left: 155px;
+  color: #514A4B;
+}
+.adminLocations .adminLocations_updated {
+  position: fixed;
+  background-color: #EE5D1A;
+  top: 30vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50vw;
+  height: 30vh;
+  font-size: 2vw;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 50;
+}
+.adminLocations .adminLocations_updated button {
+  border: none;
+  width: 15vw;
+  height: 6vh;
+  font-size: 1.5vw;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #1F1A1B;
+  color: #F9F9F9;
+}
+.adminLocations .adminLocations_container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.adminLocations .adminLocations_container .adminLocations_subContainer {
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  display: flex;
+  flex-flow: wrap;
+  margin-top: 250px;
+}/*# sourceMappingURL=AdminLocations.css.map */

@@ -1,0 +1,28 @@
+export const routes = {
+    home: '/',
+    publishPlace : '/eventplace',
+    productDetail: '/details/:id',
+    search: '/search', 
+    signUp: '/signup',
+    essay: '/essay',
+    addProduct: '/addproduct',  
+    controlAdmin:'/controlAdmin',
+    login: '/login',
+    termsAndConditions: '/termsAndConditions',
+    resetPassword: '/resetPassword',
+    adminRoles: "/rolesManagement",
+    adminCategories: "/categoriesManagement",
+    userProfile: '/userProfile',
+    editEventPlace: '/editEventPlace',
+    sendConfirmationAgain: '/sendConfirmationAgain',
+    editUsers: '/editUsers',
+    basicToOwner: '/changeRole',
+    favorites: '/myFavorites',
+    cities: '/cities',
+    bookingError: 'bookingError',
+    rolesList: "/rolesList",
+    rolesUpdate: "/rolesUpdate/:roleName",
+    bookingHistory: '/bookingHistory',
+
+}
+

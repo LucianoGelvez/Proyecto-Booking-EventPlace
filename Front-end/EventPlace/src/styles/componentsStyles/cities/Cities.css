@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Ubuntu&display=swap");
+.city .city_sure_to_delete {
+  position: absolute;
+  background-color: rgb(207, 202, 202);
+  width: 30vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.5vw;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%);
+  filter: none;
+}
+.city .city_sure_to_delete button {
+  border: none;
+  background-color: #ff4545;
+  font-size: 1.3vw;
+  color: #ffffff;
+  cursor: pointer;
+  height: 7vh;
+  border-radius: 0.4vw;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.city .city__content {
+  filter: blur(4px);
+  pointer-events: none;
+}
+.city .city-component {
+  width: 100%;
+  max-width: 1000px;
+  margin: 200px auto 0;
+  padding: 30px;
+  background-color: #ffffff;
+  color: #333333;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.city .city-component h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.city .city-component h2 {
+  margin-bottom: 3rem;
+  font-size: 32px;
+}
+.city .city-component .loading {
+  color: #818181;
+  background-color: #dcdcdc;
+  border-radius: 0.8vw;
+  width: 13vw;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 1em;
+  position: relative;
+}
+.city .city-component .loading::before,
+.city .city-component .loading::after {
+  content: "";
+  position: absolute;
+  left: 5vw;
+  top: 40%;
+  transform: translate(0, -50%);
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #818181;
+  animation: loadingAnimation 1s infinite;
+}
+.city .city-component .loading::before {
+  left: calc(70% - 1em);
+  animation-delay: 0s;
+}
+.city .city-component .loading::after {
+  left: calc(70% + 0.5em);
+  animation-delay: 0.2s;
+}
+@keyframes loadingAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+.city .city-component .city-form {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.city .city-component .city-form input {
+  flex: 1;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  border-radius: 0.4rem;
+  outline: none;
+  transition: border-color 0.2s;
+  font-size: 1.2rem;
+}
+.city .city-component .city-form input:hover {
+  border-color: #ff5500;
+  font-weight: 550;
+}
+.city .city-component .city-form input:focus {
+  border-color: #ff5500;
+  box-shadow: 0 0 0.2rem rgba(255, 85, 0, 0.4);
+}
+.city .city-component .city-form button {
+  background-color: #ee5d1a;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.city .city-component .city-form button:hover {
+  background-color: #e64900;
+}
+.city .city-component .city-form button:active {
+  background-color: #c53900;
+}
+.city .city-component .city-list {
+  height: 100%;
+  margin-bottom: 100px;
+}
+.city .city-component .city-list .city-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+.city .city-component .city-list .city-item .city_sure_to_delete {
+  position: absolute;
+  background-color: rgb(207, 202, 202);
+  width: 30vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.5vw;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%);
+  filter: none;
+}
+.city .city-component .city-list .city-item .city_sure_to_delete button {
+  border: none;
+  background-color: #ff4545;
+  font-size: 1.3vw;
+  color: #ffffff;
+  cursor: pointer;
+  height: 7vh;
+  border-radius: 0.4vw;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.city .city-component .city-list .city-item:hover {
+  cursor: pointer;
+}
+.city .city-component .city-list .city-item:active {
+  background-color: #f3f3f3;
+  transition: background-color 0.3s;
+}
+.city .city-component .city-list .city-item h3 {
+  margin-bottom: 0.5rem;
+}
+.city .city-component .city-list .city-item .city-actions .city-actions_delete {
+  width: 25px;
+  position: relative;
+  bottom: 20px;
+  left: 10px;
+}
+.city .profile_sure_to_delete {
+  position: absolute;
+  background-color: rgb(207, 202, 202);
+  width: 30vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.5vw;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+.city .profile_sure_to_delete button {
+  border: none;
+  background-color: #ff4545;
+  font-size: 1.3vw;
+  color: #ffffff;
+  cursor: pointer;
+  height: 7vh;
+  border-radius: 0.4vw;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .city .city-component {
+    margin-top: 30%;
+    width: 90%;
+  }
+  .city .city-component h2 {
+    text-align: center;
+  }
+  .city .city-component .city-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .city .city-component .city-form input {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .city .city-component .city-form button {
+    width: 60%;
+    margin-bottom: 10%;
+  }
+  .city .city-component .city-list .city-item .city-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-left: 6rem;
+    margin-top: 5px;
+  }
+  .city .city-component .city-list .city-item .city-actions button:hover {
+    background-color: #9a8b84;
+  }
+  .city .city-component .city-list .city-item .city-actions button:first-child {
+    background-color: #6c757d;
+  }
+  .city .city-component .city-list .city-item .city-actions button:first-child:hover {
+    background-color: #5a6268;
+  }
+}/*# sourceMappingURL=Cities.css.map */

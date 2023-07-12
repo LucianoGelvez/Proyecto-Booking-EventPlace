@@ -1,0 +1,15 @@
+.termsAndConditions {
+  color: #1F1A1B;
+  padding: 2vw;
+  position: relative;
+  top: 18vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 130vh;
+}
+.termsAndConditions article div {
+  font-weight: 700;
+  position: relative;
+  top: 1vh;
+}/*# sourceMappingURL=TermsAndConditions.css.map */

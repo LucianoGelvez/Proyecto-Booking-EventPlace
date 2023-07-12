@@ -1,0 +1,201 @@
+.login {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 65vh;
+  color: #181818;
+  font-family: "montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.4vw;
+  width: 40vw;
+  .loading {
+    color: #818181;
+    background-color: #dcdcdc;
+    border-radius: 0.8vw;
+    width: 13vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 1em;
+    position: relative;
+  }
+
+  .loading::before,
+  .loading::after {
+    content: "";
+    position: absolute;
+    left: 5vw;
+    top: 40%;
+    transform: translate(0, -50%);
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #818181;
+    animation: loadingAnimation 1s infinite;
+  }
+
+  .loading::before {
+    left: calc(70% - 1em);
+    animation-delay: 0s;
+  }
+
+  .loading::after {
+    left: calc(70% + 0.5em);
+    animation-delay: 0.2s;
+  }
+
+  @keyframes loadingAnimation {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+
+  .succes {
+    background-color: #a9dfbf;
+    border-radius: 0.8vw;
+    height: 6vh;
+    width: 40vw;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login__error {
+    color: #ff0000;
+    background-color: #fee2e2;
+    height: 7vh;
+    width: 28vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5vw;
+  }
+
+  .login__title {
+    font-family: "ubuntu";
+    font-size: 2.5vw;
+  }
+
+  .login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60%;
+    width: 30vw;
+    font-size: 1.2vw;
+    .login__form-field {
+      display: flex;
+      flex-direction: column;
+
+      .login__input {
+        background-color: #f2f2f2;
+        width: 25vw;
+        margin-left: 0;
+        height: 5vh;
+        font-size: 0.9vw;
+        padding: 10px;
+      }
+    }
+
+    .login__button {
+      border: none;
+      background-color: #ee5d1a;
+      color: #ffffff;
+      width: 15vw;
+      cursor: pointer;
+      border-radius: 0.5vw;
+      font-size: 1.5vw;
+      height: 4vh;
+      text-align: center;
+    }
+  }
+
+  .login__register-info {
+    display: flex;
+    justify-content: space-between;
+    width: 23vw;
+    font-size: 1.3vw;
+  }
+}
+
+@media (max-width: 835px) {
+  .login {
+    top: 52vh;
+    width: 80vw;
+    height: 70vh;
+    color: #181818;
+    font-family: "montserrat";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3vw;
+    margin: 0;
+    .login__error {
+      height: 7vh;
+      width: 50vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1vw;
+    }
+
+    .login__title {
+      font-family: "ubuntu";
+      font-size: 6vh;
+    }
+
+    .login__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 50%;
+      width: 60vw;
+      font-size: 3.5vw;
+      .login__form-field {
+        display: flex;
+        flex-direction: column;
+        .login__input {
+          width: 60vw;
+          height: 35px;
+          font-size: 2vh;
+        }
+      }
+
+      .login__button {
+        border: none;
+        background-color: #ee5d1a;
+        color: #ffffff;
+        width: 30vw;
+        cursor: pointer;
+        border-radius: 2vw;
+        font-size: 3vw;
+        height: 5vh;
+        padding: 0;
+      }
+    }
+
+    .login__register-info {
+      display: flex;
+      justify-content: space-between;
+      width: 60vw;
+      font-size: 3.5vw;
+    }
+  }
+}

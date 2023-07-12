@@ -1,0 +1,37 @@
+.rating-container {
+  margin-bottom: 21px;
+}
+.rating-container .fas {
+  font-size: 45px;
+  color: #ccc;
+  transition: color 0.3s;
+}
+.rating-container .fas:hover {
+  color: yellow;
+}
+.rating-container .filled {
+  color: yellow;
+}
+.rating-container .half-filled {
+  color: yellow;
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+.rating-container .half-filled:after {
+  content: "\f123";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  color: #ccc;
+}
+.rating-container .fa-star-empty {
+  color: gray;
+}
+.rating-container.readOnly .fas {
+  cursor: default;
+  pointer-events: none;
+}/*# sourceMappingURL=finalRating.css.map */

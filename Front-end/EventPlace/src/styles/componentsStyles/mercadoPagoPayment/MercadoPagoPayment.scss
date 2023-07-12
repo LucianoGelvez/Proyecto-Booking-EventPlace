@@ -1,0 +1,124 @@
+@import '../../variables/_colors.scss';
+
+.MercadoPagoPayment
+{
+    width: 100vw;
+    height: 60vh;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    article
+    {
+        width: 70vw;
+        height: 68vh;
+        background-color: $orange;
+        border-radius: 15px;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.1vw;
+
+        div
+        {
+            text-align: center;
+        }
+
+        .MercadoPagoPayment_policies_text
+        {
+            padding-left: 5%;
+            padding-right: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height:normal;
+            text-align: justify;
+
+            .mercadoPagoPaymet_disclaimer
+            {
+                font-size: 1.5vw;
+                font-weight: 700;
+                color: black;
+            }
+
+
+            .MercadoPagoPayment_text-error
+            {
+                color: #FF0000; 
+                background-color: #FEE2E2; 
+                width: 25vw;
+                height: 10vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2vw;
+                border-radius: 0.5vw;
+            }
+
+            button{
+                background-color: $orange;
+                color:$white;
+                cursor: pointer;
+                border-radius: 5px;
+                padding: 10px;
+                border-style: none;
+                width: 200px;
+                margin-top: 3%;
+                &:hover{
+                    border-color: $brown;
+                
+                    border-style: solid;
+                    border-width: 1px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1250px)
+{
+    .MercadoPagoPayment
+    {
+        article
+        {
+            font-size: 2vw;
+            
+            .MercadoPagoPayment_policies_text
+            {
+                .mercadoPagoPaymet_disclaimer
+                {
+                 font-size: 2vw;
+                }
+           }
+    }
+} 
+}
+@media screen and (max-width: 860px) 
+{
+    .MercadoPagoPayment
+    {
+        article
+        {
+            width: 90vw;
+            height: 75vh;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            margin-top: 10vh;
+            font-size: 1.6vh;
+
+            .MercadoPagoPayment_policies_text
+            {
+                .mercadoPagoPaymet_disclaimer
+                {
+                    font-size: 2vh;
+                }
+            }
+
+        }
+    }
+}

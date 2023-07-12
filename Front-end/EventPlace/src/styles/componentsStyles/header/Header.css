@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Ubuntu&display=swap");
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 11vh;
+  background-color: #1F1A1B;
+}
+.header.transparentHeader {
+  background-color: rgba(24, 20, 20, 0.765);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+.header .header_share {
+  display: none;
+}
+.header .burgerMenu {
+  display: none;
+}
+.header .burgerMenu .userBurgerMenu {
+  background-color: none;
+}
+.header .burgerMenu .userBurgerMenu .burgerIcon {
+  width: 7vw;
+  height: 6vw;
+}
+.header .burgerMenu .userBurgerMenu .logIn {
+  margin-top: 20px;
+  padding-top: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  width: 100%;
+  height: auto;
+  background-color: #1F1A1B;
+  opacity: 0.9;
+  left: 0%;
+}
+.header .burgerMenu .userBurgerMenu .logIn .divider {
+  border-bottom: 0.5px solid #cccccc;
+  margin-bottom: 8px;
+  padding: 8px;
+  list-style-type: none;
+}
+.header .burgerMenu .userBurgerMenu .logIn nav {
+  width: 50%;
+}
+.header .burgerMenu .userBurgerMenu .logIn nav ul li {
+  font-size: 2.5vh;
+  text-align: center;
+  list-style-type: none;
+}
+.header .burgerMenu .userBurgerMenu .logIn button {
+  margin: 20px;
+  width: 200px;
+  margin-top: 0px;
+  color: aliceblue;
+  font-size: 20px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fad571, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.25);
+}
+.header .burgerMenu .userBurgerMenu li {
+  color: #F9F9F9;
+  font-weight: 400;
+  padding: 8px;
+  font-size: 20px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.header .burgerMenu .userBurgerMenu li a:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
+.header .header_logo {
+  margin-left: 1vw;
+}
+.header .header_logo img {
+  width: 250px;
+}
+.header .menuDesk {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-right: 3vw;
+}
+.header .menuDesk ul {
+  margin: 0;
+}
+.header .menuDesk .share {
+  width: 35%;
+  cursor: pointer;
+}
+.header .menuDesk .share img {
+  width: 30px;
+}
+.header .menuDesk .menuDesk_links_shareDesk {
+  position: absolute;
+  top: 10vh;
+  background-color: #f9f9f9;
+  width: 3vw;
+  height: 16vh;
+  border-radius: 0.5vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  left: 93.5vw;
+  box-shadow: 0 0 5px rgb(0, 0, 1);
+}
+.header .menuDesk .menuDesk_links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  justify-content: flex-end;
+}
+.header .menuDesk .menuDesk_links ul {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  justify-content: flex-end;
+}
+.header .menuDesk .menuDesk_links ul li {
+  color: #F9F9F9;
+  font-size: 20px;
+  width: 8vw;
+  margin: 0.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .menuDesk .menuDesk_links ul li li:hover {
+  border-color: #EE5D1A;
+}
+.header .menuDesk .menuDesk_links ul a:-webkit-any-link {
+  text-decoration: none;
+}
+.header .menuDesk .logInDesk {
+  display: flex;
+  flex-direction: row;
+  background-color: none;
+  position: relative;
+  right: 8vw;
+}
+.header .menuDesk .logInDesk button {
+  display: hidden;
+  padding: 1.1vw;
+  width: 7vw;
+  font-size: 1vw;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 1vw;
+  height: 3vh;
+  text-align: center;
+  line-height: 1px;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fad571, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.25);
+}
+.header .menuDesk .logInDesk button:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+.header .menuDesk .logInDesk button:focus {
+  outline: none;
+}
+.header .menuDesk .manageUserDesk {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  width: 10vw;
+}
+.header .menuDesk .manageUserDesk .profile_image {
+  display: flex;
+  flex-direction: column;
+  width: 3vw;
+  border-radius: 200px;
+  height: 3vw;
+  background-color: #76767b;
+  margin: 0;
+  padding: 0;
+}
+.header .menuDesk .manageUserDesk .profile_image img {
+  width: 100%;
+  border-radius: 200px;
+  height: 100%;
+  box-shadow: 1px 6px 6px rgba(149, 56, 13, 0.5);
+}
+.header .menuDesk .manageUserDesk .name {
+  font-size: 15px;
+  margin: 0px;
+}
+.header .menuDesk .manageUserDesk .navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+}
+.header .menuDesk .manageUserDesk .navbar__inicials {
+  width: 100%;
+}
+.header .menuDesk .manageUserDesk .navbar__toggle {
+  width: 6vw;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.header .menuDesk .manageUserDesk .navbar__toggle .navbar__toggle___down {
+  width: 16px;
+}
+.header .menuDesk .manageUserDesk .navbar__menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 90%;
+  right: -60px;
+  margin-right: 10%;
+  background-color: #333;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  display: none;
+  font-size: 16px;
+}
+.header .menuDesk .manageUserDesk .navbar__menu_open {
+  width: 20vw;
+  display: flex;
+  margin-right: 100px;
+  border-radius: 5px;
+  list-style-type: none;
+  transform: translateY(0);
+}
+.header .menuDesk .manageUserDesk .navbar__menu_open > li:first-child {
+  margin-top: 15px;
+}
+.header .menuDesk .manageUserDesk .navbar__menu_open li {
+  font-size: 2.5vh;
+  margin-left: 1vw;
+  list-style-type: none;
+}
+.header .menuDesk .manageUserDesk .navbar__menu_open .divider {
+  border-bottom: 0.5px solid #cccccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.header .menuDesk .manageUserDesk .navbar__menu_open a:-webkit-any-link {
+  text-decoration: none;
+}
+.header .menuDesk .manageUserDesk .navbar__link {
+  color: #fff;
+  text-decoration: none;
+}
+.header .menuDesk .manageUserDesk .navbar__link:hover {
+  text-decoration: underline;
+}
+.header .menuDesk .manageUserDesk .navbar__item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2vh;
+  margin-bottom: 10px;
+}
+.header .menuDesk .manageUserDesk .navbar__item .logOutDesk {
+  color: #EE5D1A;
+  padding: 0px;
+  cursor: pointer;
+  left: 0;
+  width: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 35px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fad571, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.2);
+  left: 0;
+  right: 0;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.header img {
+  width: 200px;
+  height: auto;
+  margin-right: 8px;
+  border-radius: 1rem;
+}
+
+@media (max-width: 480px) {
+  .header {
+    width: 100vw;
+  }
+  .header .header_logo img {
+    width: 150px;
+  }
+  .header .burgerMenu .userBurgerMenu .burgerMenu_userBurgerMenu_share {
+    position: absolute;
+    top: 8vh;
+    background-color: #f9f9f9;
+    width: 23vw;
+    height: 4.4vh;
+    border-radius: 0.7vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    left: 60vw;
+    box-shadow: 0 0 5px rgb(0, 0, 1);
+  }
+  .header .header_share {
+    display: flex;
+    left: 5vw;
+  }
+  .header .header_share .header_share__net {
+    width: 5vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 8vw;
+  }
+  .header .burgerMenu {
+    display: flex;
+    margin: 0;
+    padding-right: 15px;
+  }
+  .header .burgerMenu a:-webkit-any-link {
+    text-decoration: none;
+    color: #F9F9F9;
+  }
+  .header .menuDesk {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 835px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header .header_logo {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+  }
+  .header .header_logo img {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+  }
+  .header .burgerMenu .userBurgerMenu .burgerMenu_userBurgerMenu_share {
+    position: absolute;
+    top: 10vh;
+    background-color: #f9f9f9;
+    width: 23vw;
+    height: 7.2vw;
+    border-radius: 0.7vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    left: 60vw;
+    box-shadow: 0 0 5px rgb(0, 0, 1);
+  }
+  .header .header_share {
+    display: flex;
+    position: relative;
+    left: 15vw;
+  }
+  .header .header_share .header_share__net {
+    width: 6vw;
+  }
+  .header .burgerMenu {
+    display: flex;
+  }
+  .header .burgerMenu a:-webkit-any-link {
+    text-decoration: none;
+    color: #F9F9F9;
+  }
+  .header .menuDesk {
+    display: none;
+  }
+}/*# sourceMappingURL=Header.css.map */
